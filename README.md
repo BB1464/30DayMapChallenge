@@ -1,9 +1,6 @@
 
 # 30DayMapChallenge
 
-Submissions to the
-
-
 
 <h1 align="center"> Day 1: Point!!! </h1>
 
@@ -11,10 +8,6 @@ Submissions to the
     <img src="https://github.com/BB1464/30DayMapChallenge/blob/master/Plot/day01_points_01.png" width="60%">
       </p>
 
-
-
-
-#30DayMapChallenge
 
 
 
