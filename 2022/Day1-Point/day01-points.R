@@ -101,7 +101,7 @@ ggplot(coords_cgn) +
 
 ## Save the plot
 
-ggsave(here("Plot", "day01_points_01.png"), dpi = 600, width = 8, height = 8)
+ggsave(here::here("2022/Day1-Point", "day01_points_01.png"), dpi = 600, width = 8, height = 8)
 
 
 
