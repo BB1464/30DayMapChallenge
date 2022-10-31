@@ -1,8 +1,12 @@
 
 # 30DayMapChallenge
 
+## The Maps
 
-<h1 align="center"> Day 1: Point!!! </h1>
+### Day 1: Points
+
+
+<h1 align="center"> Day 1: A map of the locations of all kindergardens and day care centers in Cologne, Germany!!! </h1>
 
   <p align="center">
     <img src="https://github.com/BB1464/30DayMapChallenge/blob/master/Plot/day01_points_01.png" width="60%">
