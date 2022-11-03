@@ -1,4 +1,4 @@
-# 30DaysMapChallenge 
+# 30DayMapChallenge 
 
 ## Day3: Ploygon
 
