@@ -116,9 +116,9 @@ map <- magick::image_read(here::here('2022/Day3-Polygon/Day3.png'))
 clr <- "#FFFFBC"
 
 # Title
-map_title <- magick::image_annotate(map, "Map Showing the Situation of the Earth at Night",
+map_title <- magick::image_annotate(map, "Map Showing the Situation of the Earth at Night!!!",
                                     font = "Georgia",
-                                    color = alpha('lightgoldenrod1', .65), size = 150, gravity = "north",
+                                    color = alpha(clr, .65), size = 150, gravity = "north",
                                     location = "+0+80"
 )
 
@@ -137,3 +137,4 @@ color = alpha(clr, .45), size = 75, gravity = "south"
 ## Save the Plot
 
 magick::image_write(map_final, glue::glue(here::here('2022/Day3-Polygon/Day3.png')))
+
