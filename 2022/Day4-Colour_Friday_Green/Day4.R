@@ -22,7 +22,7 @@ NG_sf |>
   mutate(name=if_else(condition = name=='Federal Capital Territory',true = 'FCT',false = name)) |> 
   ggplot()+
   geom_sf(col='white',fill='green')+
-  geom_sf_text(aes(label=name,font='serif'))+
+  geom_sf_text(aes(label=name,font='serif',size=22,face='bold'))+
   labs(title = 'Map Showing the States in Nigeria!!!',caption = 'Designer: Oluwafemi Oyedele | BB1464')+
   theme_void()+
   theme(plot.background = element_rect(fill = 'black',colour = 'black'),plot.caption = element_text(family = 'serif',face = 'bold',colour = 'white',size = 14,hjust = 0.9),plot.title = element_text(family = 'serif',face = 'bold',colour = 'white',size = 45,hjust = 0.5))
