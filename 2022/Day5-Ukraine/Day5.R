@@ -36,8 +36,9 @@ ggplot(data = Ukr)+geom_sf(aes(fill=woe_name),show.legend = FALSE)+geom_sf_text(
 
 # Save the Plot ---------------------------------------------
 
-path <- here::here("Day1", "day1")
+path <- here::here("2022/Day5-Ukraine/", "day5")
 path <- paste0(path, "_2022")
+
 ggsave(glue::glue("{path}.pdf"), width = 10.5, height = 10.5, device = cairo_pdf)
 
 pdftools::pdf_convert(
