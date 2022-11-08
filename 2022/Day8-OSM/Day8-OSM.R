@@ -112,7 +112,7 @@ ggplot() +
   coord_sf(xlim = c(coords[1], coords[1,2]), 
            ylim = c(coords[2], coords[2,2]),
            expand = FALSE) + theme_void()+
-  labs(caption = "Data: {osmdata} Lagos, Nigeria | Map: Oluwafemi Oyedele (@OluwafemOyedele)",title = 'Basic Amenities in London !!!')+
+  labs(caption = "Data: {osmdata} | Map: Oluwafemi Oyedele (@OluwafemOyedele)",title = 'Basic Amenities in London !!!')+
   theme(plot.caption = element_text(family = f1,face = 'bold',colour = 'black',size = 15,hjust = 0.8),plot.title = element_text(family = f1,face = 'bold',colour = 'black',size = 45,hjust = 0.5))
  
 # Save the Plot
