@@ -1,6 +1,23 @@
+
+
+# Load the Required Packages -----------------------------------
+
 library(osmdata)
 library(tidyverse)
 library(sf)
+library(showtext)
+
+
+# Font
+
+font_add_google("Fira Sans","Fira Sans")
+
+f1 = "Fira Sans"
+
+showtext_auto(enable = TRUE)
+showtext_opts(dpi=320)
+
+
 
 #choose location to plot
 #option 1 is not recommended in this instance
@@ -67,4 +84,11 @@ ggplot() +
   geom_sf(data = buildings$osm_polygons, color = '#40493f', fill = '#40493f', size = 1) +
   coord_sf(xlim = c(coords[1], coords[1,2]), 
            ylim = c(coords[2], coords[2,2]),
-           expand = FALSE) + theme_minimal()
+           expand = FALSE) + theme_void()+
+  labs(caption = "Data: Open Street Map | Graphic: Oluwafemi Oyedele")+
+  theme(plot.caption = element_text(family = f1,face = 'bold',colour = 'black',size = 15,hjust = 0.8))
+
+
+# Save the Plot
+
+ggsave('Day8.png',path = here::here('2022/Day8-OSM/'),width = 12,height = 12,dpi = 230,bg = 'white')
