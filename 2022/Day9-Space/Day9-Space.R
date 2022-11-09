@@ -6,7 +6,6 @@ library(giscoR) # for the countries dataset only
 library(tidyverse)
 library(showtext)
 library(ggtext)
-library(glue)
 
 #### MISC ####
 
@@ -14,9 +13,6 @@ font <- "Albert Sans"
 
 font_add_google(family=font, font,db_cache = FALSE)
 
-fa_path <- systemfonts::font_info(family = "Font Awesome 6 Brands")[["path"]]
-
-font_add(family = "fa-brands", regular = fa_path)
 
 showtext_auto(enable = TRUE)
 
@@ -27,11 +23,6 @@ txt_col <- "black"
 col1 <- "#1A3399"
 
 col2 <- "#7E1900"
-
-# CAPTION
-caption_text  <- str_glue("Oluwafemi | #30DayMapChallenge | Data: giscoR<br>",
-                          "<span style='font-family: \"fa-brands\"'>&#xf09b;</span> Oluwafemi ",
-                          "<span style='font-family: \"fa-brands\"'>&#xf099;</span> Oluwafemi")
 
 
 
